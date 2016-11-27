@@ -1,0 +1,75 @@
+<view class="myContainer">
+
+    <view class="nav">
+      <ul bindtap="handleTapEvent">
+        <!--data-index 给事件对象传参数，
+          {{支持表达式运算}}
+        -->
+        <li class="{{currentIndex==0?'active':''}}" data-index="0">足球现场</li>
+        <li class="{{currentIndex==1?'active':''}}" data-index="1">足球生活</li>
+        <li class="{{currentIndex==2?'active':''}}" data-index="2">足球宝贝</li>
+      </ul>
+    </view>
+
+    <view class="content">
+        <swiper current="{{currentIndex}}" duration="100"
+        bindchange="handleChangeEvent">
+            <swiper-item>
+              <scroll-view scroll-y="true">
+              <!--允许纵向滚动-->
+              <ul>
+                <li>
+                  <image mode="aspectFill" src="images/img1.jpg" ></image>
+                  <p>微信的小程序例子</p>
+                </li>
+                <li>
+                  <image mode="aspectFill" src="images/img2.png"></image>
+                  <p>微信的小程序例子</p>
+                </li>
+                <li>
+                  <image mode="aspectFill" src="images/img3.jpg"></image>
+                  <p>微信的小程序例子</p>
+                </li>
+                <li>
+                  <image mode="aspectFill" src="images/img4.jpg"></image>
+                  <p>微信的小程序例子</p>
+                </li>
+                 <li>
+                  <image mode="aspectFill" src="images/img1.jpg" ></image>
+                  <p>微信的小程序例子</p>
+                </li>
+                <li>
+                  <image mode="aspectFill" src="images/img2.png"></image>
+                  <p>微信的小程序例子</p>
+                </li>
+                <li>
+                  <image mode="aspectFill" src="images/img3.jpg"></image>
+                  <p>微信的小程序例子</p>
+                </li>
+                <li>
+                  <image mode="aspectFill" src="images/img4.jpg"></image>
+                  <p>微信的小程序例子</p>
+                </li> <li>
+                  <image mode="aspectFill" src="images/img1.jpg" ></image>
+                  <p>微信的小程序例子</p>
+                </li>
+                <li>
+                  <image mode="aspectFill" src="images/img2.png"></image>
+                  <p>微信的小程序例子</p>
+                </li>
+                <li>
+                  <image mode="aspectFill" src="images/img3.jpg"></image>
+                  <p>微信的小程序例子</p>
+                </li>
+                <li>
+                  <image mode="aspectFill" src="images/img4.jpg"></image>
+                  <p>微信的小程序例子</p>
+                </li>
+              </ul>
+            </scroll-view>
+            </swiper-item>
+            <swiper-item>222</swiper-item>
+            <swiper-item>333</swiper-item>
+        </swiper>
+    </view>
+</view>

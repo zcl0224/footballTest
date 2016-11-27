@@ -1,0 +1,17 @@
+ul{
+    display: flex;
+    flex-wrap:wrap;
+    margin-right: 10px;
+}
+
+ul li{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left:10px;
+}
+
+ul li image{
+    width: 100%;
+    height: 160px;
+}
+

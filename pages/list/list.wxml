@@ -1,0 +1,13 @@
+<view class="myContainer">
+  <scroll-view scroll-y="true" bindscrolltolower="handleScrollLower"
+  bindscrolltoupper="handleScrollUper">
+    <ul bindtap="handleTapEvent">
+      <!--data-**** 小写的-->
+      <li wx:for="{{items}}" data-myclassid="{{item.classID}}">{{item.className}}</li>
+    </ul>
+    <view hidden="{{isInfinitHidden}}">
+      <button loading="true">正在加载中</button>
+      </view>
+  </scroll-view>
+  <loading hidden="{{isHidden}}">正在加载数据</loading>
+</view>

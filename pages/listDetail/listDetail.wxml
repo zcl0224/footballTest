@@ -1,0 +1,11 @@
+<view class="myContainer">
+
+  <ul>
+  
+    <li wx:for="{{items}}">
+        <image src="{{item.goodsListImg}}" mode="aspectFill"></image>
+        <p>{{item.goodsName}}</p>
+    </li>
+  </ul>
+  <loading hidden="{{isHidden}}">正在加载中</loading>
+</view>
